@@ -232,13 +232,13 @@
                     ><i class="fa fa-user"></i
                   ></span>
                 </div>
-                <div id="btn-check-dup" class="control">
+                <div id="btn-check-dup" class="control is-hidden">
                   <button class="button is-sparta" onclick="check_dup()">
                     Check your id
                   </button>
                 </div>
               </div>
-              <p id="help-id" class="help">
+              <p id="help-id" class="help is-hidden">
                 For your id, please enter 2-10 English characters, numbers, or
                 the following special characters (._-)
               </p>
@@ -256,7 +256,7 @@
                     ><i class="fa fa-lock"></i
                   ></span>
                 </div>
-                <p id="help-password" class="help">
+                <p id="help-password" class="help is-hidden">
                   For your password, please enter 8-20 English characters,
                   numbers, or the following special characters (!@#$%^&*)
                 </p>
@@ -276,6 +276,7 @@
                 >
                   Clear
                 </button>
+
               </nav>
               <hr />
               <h4 class="mb-3">If you have not yet signed up</h4>
@@ -289,7 +290,7 @@
               </nav>
             </div>
 
-            <div id="sign-up-box">
+            <div id="sign-up-box" class="is-hidden">
               <div class="mb-5">
                 <div class="field">
                   <div class="control has-icons-left" style="width: 100%">
@@ -322,11 +323,11 @@
                   Cancel
                 </button>
                 <button
-                  class="level-item button is-sparta is-outlined"
-                  onclick="clearInputs()"
-                >
-                  Clear
-                </button>
+                class="level-item button is-sparta is-outlined"
+                onclick="clearInputs()"
+              >
+                Clear
+              </button>
               </nav>
             </div>
           </div>
@@ -336,4 +337,3 @@
   </section>
 </body>
 </html>
-
