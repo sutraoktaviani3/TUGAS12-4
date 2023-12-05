@@ -25,10 +25,11 @@ app.config['UPLOAD_FOLDER'] = './static/profile_pics'
 
 SECRET_KEY = 'SPARTA'
 
-MONGODB_URI = os.environ.get("mongodb+srv://test:sparta@cluster0.kix0qsf.mongodb.net/?retryWrites=true&w=majority&appName=AtlasApp")
-DB_NAME =  os.environ.get("dbsparta_plus_week4")
+MONGODB_URI = os.environ.get("MONGODB_URI")
+DB_NAME = os.environ.get("DB_NAME")
 
-client = MongoClient(MONGODB_URI)
+
+client = MongoClient("mongodb+srv://test:sparta@cluster0.kix0qsf.mongodb.net/?retryWrites=true&w=majority&appName=AtlasApp")
 db = client.dbsparta_plus_week4
 
 TOKEN_KEY = 'mytoken'
